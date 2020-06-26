@@ -2,17 +2,14 @@
 
 A script to help generate markdown note taking files and convert them to PDF via pandoc. 
 
-
 ## Features
 
 - Generate a markdown note taking file, either with a front page (or *header*) or not.
 - Compile the markdown file(s) via pandoc to get a PDF file.
 
-
-## Prerequesites
+## Prerequesites
 
 - Install [Pandoc](https://pandoc.org/installing.html).
-
 
 ## How-to
 
