@@ -33,7 +33,6 @@ function compile-note() {
     filename=$(basename -- "$1")
     extension="${filename##*.}"
     filename="${filename%.*}"
-    FILE=/etc/resolv.conf
     if test -f header.md; 
     then
         cat header.md "$filename.$extension"| pandoc -s -o "$filename.pdf" --highlight-style=tango
