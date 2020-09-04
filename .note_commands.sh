@@ -1,6 +1,11 @@
 #!/bin/bash
 
 function create-note {
+    if [[ $# -eq 0 ]] ; then
+        tput setaf 1; echo 'Wrong number of arguments: create-note [-h] <filename> <foldername>.'
+        return 1
+    fi
+
     OPTIND=1
     while getopts ":h" opt; do
     case "${opt}" in
@@ -17,11 +22,14 @@ function create-note {
     if [ $OPTIND -eq 1 ]; 
     then 
         python3 ~/Documents/NoteAutomation/notes.py $1 $2; 
-        cd $2
+        if [ -n "$2" ] ; then
+            echo Changing directory to "$2".
+            cd $2
+        fi
     fi
     shift $((OPTIND-1))    
     
-    tput setaf 2; echo "Files successfully generated. You are now in the created file's folder."
+    tput setaf 2; echo "Files successfully generated."
 }
 
 function compile-note() {
