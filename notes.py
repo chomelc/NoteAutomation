@@ -65,7 +65,7 @@ class NoteManager:
             file.write(filedata)
 
     def openFileinVSCode(self):
-        os.system(f"code {self.path}")
+        os.system(f"code .")
 
 if __name__ == "__main__":
     notes = NoteManager()
