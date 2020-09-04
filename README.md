@@ -10,6 +10,7 @@ A script to help generate markdown note taking files and convert them to PDF via
 ## Prerequesites
 
 - Install [Pandoc](https://pandoc.org/installing.html).
+- Install [VS Code](https://code.visualstudio.com/download).
 
 ## How-to
 
