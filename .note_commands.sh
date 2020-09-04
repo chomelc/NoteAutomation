@@ -23,7 +23,7 @@ function create-note {
     then 
         python3 ~/Documents/NoteAutomation/notes.py $1 $2; 
         if [ -n "$2" ] ; then
-            echo Changing directory to "$2".
+            echo "Changing directory to \"$2\"".
             cd $2
         fi
     fi
