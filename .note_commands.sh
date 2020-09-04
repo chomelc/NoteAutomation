@@ -11,7 +11,10 @@ function create-note {
     case "${opt}" in
         h) 
             python3 ~/Documents/NoteAutomation/notes.py $1 $2 $3
+            if [ -n "$3" ] ; then
+            echo "Changing directory to \"$3\"".
             cd $3
+        fi
         ;;
         \?) 
             echo "Invalid option -$OPTARG."
