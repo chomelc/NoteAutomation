@@ -9,6 +9,7 @@ geometry:
 # - charter
 header-includes:
 - \usepackage{graphicx} 
+- \usepackage{multicol}
 ---
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \renewcommand{\labelitemi}{$\circ$}
